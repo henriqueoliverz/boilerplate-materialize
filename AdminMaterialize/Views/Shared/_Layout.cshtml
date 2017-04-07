@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>BoilerPlate - Materialize - OpenSource</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/Content/materialize.min.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="~/Content/Site.css" type="text/css" rel="stylesheet"/>
+    
+</head>
+<body>
+    <nav class="cyan" role="navigation">
+        <div class="left nav-wrapper container">
+            <span class="navbar-title">Editar Perfil</span>
+            <ul id="nav-mobile" class="side-nav fixed">
+                <li>
+                    <div class="userView">
+                        <div class="background cyan">                            
+                        </div>
+                        <a href="#!user"><img class="circle" src="~/img/profile-icon.jpg"></a>
+                        <a href="#!name"><span class="white-text name">Henrique Oliveira</span></a>
+                        <a href="#!email"><span class="white-text email">henrique.oliverz@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a class="waves-effect waves-cyan" href="#!"><i class="material-icons">home</i> Home</a></li>
+                <li><a class="waves-effect waves-cyan" href="#!"><i class="material-icons">account_circle</i> Editar Perfil</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="waves-effect waves-cyan" href="#!"><i class="material-icons">exit_to_app</i>Sair</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <nav class="cyan lighten-2">
+        <div class="nav-wrapper breadcrumb-nav">
+            <div class="col s12">
+                <a href="#!" class="breadcrumb">Home</a>
+                <a href="#!" class="breadcrumb">Perfil</a>
+                <a href="#!" class="breadcrumb">Editar</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        @RenderBody()        
+    </main>
+    
+    <footer class="page-footer cyan">        
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Todos os direitos reservados. Desenvolvido por Henrique Oliveira.
+            </div>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="~/Scripts/materialize.min.js"></script>
+    @Scripts.Render("~/bundles/bootstrap")
+    <script>
+        (function ($) {
+            $(function () {
+                $('.button-collapse').sideNav();
+            });
+        })(jQuery);
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
