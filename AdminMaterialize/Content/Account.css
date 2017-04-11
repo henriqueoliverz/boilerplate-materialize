@@ -4,6 +4,7 @@
     display: table;
     margin: auto;
     box-sizing: border-box;
+    font-size: 0.8em;
 }
 body {
     display: table-cell;
