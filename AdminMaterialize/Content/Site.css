@@ -1,12 +1,17 @@
 ﻿header, main, footer, nav {
-    padding-left: 320px;
+    padding-left: 300px;
 }
 
 @media only screen and (max-width : 992px) {
     header, main, footer, nav {
-        padding-left: 0;
+        padding-left: 0px;
     }
 }
+
+main {
+    padding-top: 5px;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -19,6 +24,8 @@ main {
 
 .navbar-title {
     font-size: 1.35rem;
+    margin-left: 15px;
+    display: inline-block;
 }
 
 .breadcrumb-nav {

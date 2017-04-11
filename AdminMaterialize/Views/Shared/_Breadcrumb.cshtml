@@ -1,0 +1,16 @@
+﻿@using AdminMaterialize.Models
+@model List<Breadcrumb>
+
+@if (Model != null && Model.Any())
+{
+    <nav class="cyan lighten-2">
+        <div class="nav-wrapper breadcrumb-nav">
+            <div class="col s12">
+                @foreach (var breadcrumb in Model)
+                {
+                    <a href="@breadcrumb.Url" class="breadcrumb">@breadcrumb.Descricao</a>
+                }
+            </div>
+        </div>
+    </nav>
+}
