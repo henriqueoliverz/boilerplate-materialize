@@ -3,120 +3,120 @@
     ViewBag.Title = "Index";
 }
 
-<div class="login-tab active">
-    <div class="row">
-        <div class="input-field col s12 center">
-            <img src="" alt="" class="responsive-img valign profile-image-login">
-            <p class="center login-form-text">Boilerplate - Login</p>
-        </div>
-    </div>
-
-    <form class="login-form">
-        <div class="row margin">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="username" type="text">
-                <label for="username">Usuário</label>
-            </div>
-        </div>
-        <div class="row margin">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">lock</i>
-                <input id="password" type="password">
-                <label for="password">Senha</label>
-            </div>
-            <div class="input-field col s12 m12 l12  login-text">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">Lembrar senha</label>
-            </div>
-        </div>
+    <div class="login-tab active">
         <div class="row">
             <div class="input-field col s12 center">
-                <a href="@Url.Action("Index", "Home")" class="btn waves-effect cyan waves-light col s12">Login</a>
+                <img src="" alt="" class="responsive-img valign profile-image-login">
+                <p class="center login-form-text">Boilerplate - Login</p>
             </div>
         </div>
-        <div class="input-field col s12 m6">
-            <a href="@Url.Action("Index", "Home")" class="waves-effect blue darken-3 waves-light btn col s12"><i class="fa fa-facebook left"></i>Login Facebook</a>
-        </div>
-        <div class="input-field col s12 m6">
-            <a href="@Url.Action("Index", "Home")" class="waves-effect red waves-light btn col s12"><i class="fa fa-google left"></i>Login Gooogle</a>
-        </div>
 
+        <form class="login-form">
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="username" type="text">
+                    <label for="username">Usuário</label>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">lock</i>
+                    <input id="password" type="password">
+                    <label for="password">Senha</label>
+                </div>
+                <div class="input-field col s12 m12 l12  login-text">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Lembrar senha</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 center">
+                    <a href="@Url.Action("Index", "Home")" class="btn waves-effect cyan waves-light col s12">Login</a>
+                </div>
+            </div>
+            <div class="input-field col s12 m6">
+                <a href="@Url.Action("Index", "Home")" class="waves-effect blue darken-3 waves-light btn col s12"><i class="fa fa-facebook left"></i>Login Facebook</a>
+            </div>
+            <div class="input-field col s12 m6">
+                <a href="@Url.Action("Index", "Home")" class="waves-effect red waves-light btn col s12"><i class="fa fa-google left"></i>Login Gooogle</a>
+            </div>
+
+
+            <div class="row">
+                <div class="input-field col s6 m6 l6">
+                    <p class="margin medium-small"><a id="register" href="#">Registre-se!</a></p>
+                </div>
+                <div class="input-field col s6 m6 l6">
+                    <p class="margin right-align medium-small"><a id="esqueci" href="#">Esqueceu sua senha?</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="register-tab" style="display:none;">
 
         <div class="row">
-            <div class="input-field col s6 m6 l6">
-                <p class="margin medium-small"><a id="register" href="#">Registre-se!</a></p>
-            </div>
-            <div class="input-field col s6 m6 l6">
-                <p class="margin right-align medium-small"><a id="esqueci" href="#">Esqueceu sua senha?</a></p>
+            <div class="input-field col s12 center">
+                <img src="" alt="" class="responsive-img valign profile-image-login">
+                <p class="center login-form-text">Boilerplate - Register</p>
             </div>
         </div>
-    </form>
-</div>
-<div class="register-tab" style="display:none;">
 
-    <div class="row">
-        <div class="input-field col s12 center">
-            <img src="" alt="" class="responsive-img valign profile-image-login">
-            <p class="center login-form-text">Boilerplate - Register</p>
-        </div>
+        <form class="login-form">
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <input id="username" type="text">
+                    <label for="username">Usuário</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input id="password" type="password">
+                    <label for="password">Senha</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input id="repeat-password" type="password">
+                    <label for="repeat-password">Repita a senha</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <a href="index.html" class="btn waves-effect cyan waves-light col s12 m6 offset-m3">Salvar</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12 m12 l12 center">
+                    <a id="login" href="#">Já possuo uma conta!</a>
+                </div>
+            </div>
+        </form>
     </div>
 
-    <form class="login-form">
-        <div class="row margin">
-            <div class="input-field col s12">
-                <input id="username" type="text">
-                <label for="username">Usuário</label>
-            </div>
-            <div class="input-field col s6">
-                <input id="password" type="password">
-                <label for="password">Senha</label>
-            </div>
-            <div class="input-field col s6">
-                <input id="repeat-password" type="password">
-                <label for="repeat-password">Repita a senha</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <a href="index.html" class="btn waves-effect cyan waves-light col s12 m6 offset-m3">Salvar</a>
-            </div>
-        </div>
+    <div class="remember-tab" style="display:none;">
 
         <div class="row">
-            <div class="input-field col s12 m12 l12 center">
-                <a id="login" href="#">Já possuo uma conta!</a>
+            <div class="input-field col s12 center">
+                <img src="" alt="" class="responsive-img valign profile-image-login">
+                <p class="center login-form-text">Boilerplate - Esqueci minha senha</p>
             </div>
         </div>
-    </form>
-</div>
 
-<div class="remember-tab" style="display:none;">
+        <form class="login-form">
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <input id="email" type="email">
+                    <label for="email">E-mail</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <a href="index.html" class="btn waves-effect cyan waves-light col s12 m6 offset-m3">Enviar</a>
+                </div>
+            </div>
 
-    <div class="row">
-        <div class="input-field col s12 center">
-            <img src="" alt="" class="responsive-img valign profile-image-login">
-            <p class="center login-form-text">Boilerplate - Esqueci minha senha</p>
-        </div>
+            <div class="row">
+                <div class="input-field col s12 m12 l12 center">
+                    <a id="voltar" href="#">Voltar</a>
+                </div>
+            </div>
+        </form>
     </div>
-
-    <form class="login-form">
-        <div class="row margin">
-            <div class="input-field col s12">
-                <input id="email" type="email">
-                <label for="email">E-mail</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <a href="index.html" class="btn waves-effect cyan waves-light col s12 m6 offset-m3">Enviar</a>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="input-field col s12 m12 l12 center">
-                <a id="voltar" href="#">Voltar</a>
-            </div>
-        </div>
-    </form>
-</div>

@@ -13,5 +13,10 @@ namespace AdminMaterialize.Controllers
         {
             return View();
         }
+
+        public ActionResult LogOff()
+        {
+            return RedirectToAction("Index");
+        }
     }
 }
